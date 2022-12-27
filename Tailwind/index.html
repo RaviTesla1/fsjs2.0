@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
+
+
+
+   "> -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              nav_bg: "#2C2C32",
+              search_bg: "#525257",
+              button_bg: "#005BA4",
+              second_nav_bg: "#25252B",
+              coursel_bg: "#F5F5F5",
+              coursel_white_bg: "#FFFFFF",
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>VS-Code-Clone</title>
+  </head>
+
+  <body>
+    <!-- NOTIFICATION -->
+    <h1
+      class="text-left bg-green-500 text-red-800 font-bold text-3xl py-4  sticky  top-[0px]   z-10    md:text-5xl md:bg-yellow-500 md:text-purple-800 md:text-center   "
+    >
+      Only for Educationtal Purpose
+    </h1>
+
+    <!-- NAVBAR -->
+    <nav class="bg-nav_bg text-gray-400 flex flex-row justify-between  px-[30px]  items-center lg:flex lg:flex-row lg:justify-around sticky  top-[80px]  z-10">
+      <!-- First parent div -->
+      <div  class="lg:flex lg:flex-row lg:gap-x-[30px] py-[14px] text-xl font-normal">
+        <section class="flex flex-row gap-x-[12px]">
+          <img src="./Assets/download.png" alt="" class="w-8 text-mygrey" />
+          <h2 class="text-white text-2xl font-normal">Visual Studio Code</h2>
+        </section>
+
+        <ul class="hidden lg:flex lg:flex-row lg:gap-x-[30px] lg:font-normal">
+          <li class="hover:text-white  ease-in-out	duration-300">Docs</li>
+          <li class="hover:text-white    ease-in-out  duration-300">Updates</li>
+          <li class="hover:text-white    ease-in-out  duration-300">Blog</li>
+          <li class="hover:text-white    ease-in-out  duration-300">API</li>
+          <li class="hover:text-white    ease-in-out  duration-300">Extensions</li>
+          <li class="hover:text-white    ease-in-out  duration-300">FAQ</li>
+          <li class="hover:text-white    ease-in-out  duration-300">Learn</li>
+        </ul>
+
+        
+      </div>
+
+      <div class="hidden lg:flex lg:flex-row">
+        <button class="bg-search_bg text-xl font-normal flex flex-row gap-x-[20px] pr-[70px] pl-[20px] pt-[12px] hover:bg-gray-700">
+          <span class="text-white pt-[2px]">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i> </span
+          >Search Docs
+        </button>
+        <button class="text-white bg-button_bg py-[18px] px-[24px] text-xl font-medium   hover:bg-blue-900">
+          <span class="text-white text-xl font-medium">
+            <i class="fa-solid fa-download"></i> </span
+          >Download
+        </button>
+
+      </div>
+      <h1 class="text-3xl  text-white   lg:hidden"><i class="fa-sharp fa-solid fa-bars"></i></h1>
+
+
+    </nav>
+
+    <!-- SECOND   NAVBAR -->
+    <nav>
+      <p class="bg-second_nav_bg text-gray-300 text-xl py-[12px] text-center">
+        <span class="text-button_bg   hover:underline    ease-in duration-300">Version 1.73</span> is now available! Read
+        about the new features and fixes from October
+      </p>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header
+      class="bg-nav_bg flex flex-col gap-y-[50px] h-[100vh] justify-center items-center py-[430px] lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-x-[44px]"
+    >
+      <!--LEFT  SECTION  -->
+      <div
+        class="flex flex-col justify-center items-center gap-y-[20px] lg:relative lg:bottom-[110px]"
+      >
+        <h1
+          class="text-white text-5xl w-[288px] font-light lg:text-6xl lg:w-[348px]"
+        >
+          Code editing. <span class="font-normal">Redefined.</span>
+        </h1>
+
+        <p class="text-gray-300 text-xl lg:text-2xl">
+          Free. Built on open source. Runs everywhere.
+        </p>
+        <section>
+          <button
+            class="bg-button_bg text-white text-lg py-[10px] px-[50px] font-medium w-[320px] lg:text-2xl lg:w-[360px]    hover:bg-blue-900"
+          >
+            Download for Windows <span class="font-normal">Stable Built</span>
+          </button>
+
+          <button
+            class="bg-button_bg text-white text-3xl py-[19px] px-[20px] relative top-[18px] lg:py-[24px] lg: relative lg:pb-[25px]"
+          >
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </section>
+
+        <button
+          class="text-button_bg bg-second_nav_bg px-[20px] py-[12px] rounded-md   hover:underline-offset-1   hover:underline"
+        >
+          Web Insiders edition <span class="text-gray-300   ">, or</span> other
+          platforms
+        </button>
+        <p class="text-gray-300 w-[270px] text-base">
+          By using VS Code, you agree to its
+          <span class="text-button_bg pl-[14px]">
+            license and privacy statement</span
+          >
+        </p>
+      </div>
+
+      <!-- RIGHT SECTION -->
+      <img
+        src="./Assets/vscode_cover.PNG"
+        alt=""
+        class="w-[700px] lg:w-[880px] lg:h-[660px]"
+      />
+    </header>
+
+    <!-- FOUR ICONS BELOW HEADER -->
+    <div
+      class="text-nav_bg h-[300px] flex flex-col justify-center items-center gap-y-[80px] lg:flex lg:flex-row lg:gap-x-[200px] lg:justify-center lg:h-[200px]"
+    >
+      <!-- FIRST ROW -->
+      <div
+        class="flex flex-row gap-x-[240px] lg:flex lg:flex-row lg:gap-x-[200px]"
+      >
+        <section>
+          <i class="fa-regular fa-lightbulb text-6xl hover:text-red-700"></i>
+          <p class="text-2xl relative right-[20px]">IntelliSense</p>
+        </section>
+
+        <section>
+          <i
+            class="fa-sharp fa-solid fa-shapes text-6xl hover:text-red-700"
+          ></i>
+          <p class="text-2xl relative right-[34px]">Run and Debug</p>
+        </section>
+      </div>
+
+      <!-- SECOND ROW -->
+      <div
+        class="flex flex-row gap-x-[240px] lg:flex lg:flex-row lg:gap-x-[200px]"
+      >
+        <section>
+          <i class="fa-solid fa-code-branch text-6xl hover:text-red-700"></i>
+          <p class="text-2xl relative right-[40px]">Built-in-Git</p>
+        </section>
+
+        <section>
+          <i class="fa-regular fa-lightbulb text-6xl hover:text-red-700"></i>
+
+          <p class="text-2xl relative right-[30px]">Extensions</p>
+        </section>
+      </div>
+    </div>
+
+    <!-- COROUSEL -->
+    <aside
+      class="bg-coursel_bg h-[600px] flex flex-col justify-center items-center gap-y-[20px] py-[300px] lg:flex lg:flex-row lg:justify-around lg:h-[200px]"
+    >
+      <i
+        class="fa-solid fa-less-than relative top-[240px] right-[340px] font-black text-2xl lg:relative lg:top-[10px] lg:left-[10px]"
+      ></i>
+
+      <!-- First BOX -->
+      <div class="flex flex-row gap-x-[10px]">
+        <img
+          src="./Assets/pexels-andrea-piacquadio-789822.jpg"
+          alt=""
+          class="w-[100px] h-[100px] rounded-[50%]"
+        />
+        <section>
+          <h1 class="font-semibold w-[120px]">
+            Una Kravets <span class="font-light">@Una</span>
+          </h1>
+          <p class="text-nav_bg text-xl font-light w-[530px] lg:w-[300px]">
+            VS <span class="text-button_bg font-normal">@code</span> does so
+            many things right. I’m constantly impressed by the UX, and
+            customizing workspace / user preferences is no exception. 🙌🏼💯 It
+            just keeps getting better ❤️
+          </p>
+        </section>
+      </div>
+
+      <!-- Second BOX -->
+      <div class="flex flex-row gap-x-[10px]">
+        <img
+          src="./Assets/pexels-chloe-1043474.jpg"
+          alt=""
+          class="w-[100px] h-[100px] rounded-[50%]"
+        />
+        <section>
+          <h1 class="font-semibold w-[160px]">
+            Jonathan Dunlap <span class="font-light">@jadbox</span>
+          </h1>
+          <p class="text-nav_bg text-xl font-light w-[530px] lg:w-[300px]">
+            VS Code will have deep remote development. You can connect to a
+            container running a different OS and use any VS Code plugins,
+            linting, debugging for that environment. 🔥🔥🔥
+          </p>
+        </section>
+      </div>
+
+      <!-- THIRD BOX -->
+      <div class="flex flex-row gap-x-[10px]">
+        <img
+          src="./Assets/pexels-anna-shvets-3727474.jpg"
+          alt=""
+          class="w-[100px] h-[100px] rounded-[50%]"
+        />
+        <section>
+          <h1 class="font-semibold w-[180px]">
+            Pavithra Kodmad <span class="font-light">@PKodmad</span>
+          </h1>
+          <p class="text-nav_bg text-xl font-light w-[530px] lg:w-[300px]">
+            VS Code is my most used and favorite editor. I love being able to
+            customize the editor - changing the layout, the icons, fonts and
+            color scheme is so easy!
+          </p>
+        </section>
+      </div>
+
+      <i
+        class="fa-solid fa-greater-than relative bottom-[254px] left-[340px] font-black text-2xl lg:relative lg:bottom-[20px] lg:left-[10px]"
+      ></i>
+    </aside>
+    <!-- COROUSEL    ENDDDDDDD-->
+
+    <!-- FIGURE FIRST -->
+
+    <!-- <figure
+      class="bg-coursel_white_bg h-[600px] flex flex-col justify-center items-center gap-y-[30px] box-border pt-[80px] pb-[100px] lg:flex lg:flex-row lg:justify-between lg:gap-x-[140px]   lg:w-full"
+    >
+
+    
+      <!-- 1... -->
+      <!-- <img src="./Assets/bulb_square.svg" alt="" class="w-[500px]" /> -->
+      <!-- 2... -->
+      <!-- <div
+        class="flex flex-col gap-y-[30px] px-[20px] lg:relative lg:bottom-[80px]"
+      >
+        <h1 class="text-2xl text-nav_bg lg:text-4xl lg:w-2/5">
+          Meet IntelliSense.
+        </h1>
+        <p class="text-xl text-nav_bg lg:w-[700px] lg:w-3/5">
+          Go beyond syntax highlighting and autocomplete with IntelliSense,
+          which provides smart completions based on variable types, function
+          definitions, and imported modules
+        </p>
+      </div>
+    </figure> --> -->
+
+
+    <figure
+    class="bg-coursel_white_bg h-[600px] flex flex-col justify-center items-center gap-y-[30px] box-border pt-[80px] pb-[100px] lg:flex lg:flex-row lg:justify-center lg:gap-x-[140px]"
+  >
+    <img src="./Assets/bulb_square.svg" alt="" class="w-[500px]" />
+
+    <div
+      class="flex flex-col gap-y-[30px] px-[20px] lg:relative lg:bottom-[80px]"
+    >
+      <h1 class="text-2xl text-nav_bg lg:text-4xl">
+        Meet IntelliSense.
+      </h1>
+      <p class="text-xl text-nav_bg lg:w-[700px] lg:text-2xl">
+        With <span class="text-button_bg">Microsoft Azure</span> you can
+        deploy and host your React, Angular, Vue, Node, Python (and more!)
+        sites, store and query relational and document based data, and scale
+        with serverless computing, all with ease,
+        <span class="text-button_bg"> all from within VS Code</span>
+      </p>
+    </div>
+  </figure>
+    <!-- FIGURE FIRST ENDDDD -->
+
+    <!-- SECOND  FIGURE -->
+    <figure
+      class="bg-coursel_bg h-[600px] flex flex-col-reverse justify-center items-center gap-y-[30px] box-border pt-[80px] pb-[100px] lg:flex lg:flex-row lg:justify-center lg:gap-x-[140px]"
+    >
+      <div
+        class="flex flex-col gap-y-[30px] px-[20px] lg:relative lg:bottom-[80px]"
+      >
+        <h1 class="text-2xl text-nav_bg lg:text-4xl">
+          Print statement debugging is a thing of the past.
+        </h1>
+        <p class="text-xl text-nav_bg lg:w-[700px] lg:text-2xl">
+          Debug code right from the editor. Launch or attach to your running
+          apps and debug with break points, call stacks, and an interactive
+          console.
+        </p>
+      </div>
+      <img src="./Assets/square_Run_and_debug.svg" alt="" class="w-[500px]" />
+    </figure>
+
+    <!-- FIGURE THIRD -->
+    <figure
+      class="bg-coursel_white_bg h-[600px] flex flex-col justify-center items-center gap-y-[30px] box-border pt-[80px] pb-[100px] lg:flex lg:flex-row lg:justify-center lg:gap-x-[140px]"
+    >
+      <img src="./Assets/square_Git.svg" alt="" class="w-[500px]" />
+
+      <div
+        class="flex flex-col gap-y-[30px] px-[20px] lg:relative lg:bottom-[80px]"
+      >
+        <h1 class="text-2xl text-nav_bg lg:text-4xl">Git commands built-in.</h1>
+        <p class="text-xl text-nav_bg lg:w-[700px] lg:text-2xl">
+          Working with Git and other SCM providers has never been easier. Review
+          diffs, stage files, and make commits right from the editor. Push and
+          pull from any hosted SCM service.
+        </p>
+      </div>
+    </figure>
+
+    <!-- FOURTH  FIGURE -->
+    <figure
+      class="bg-coursel_bg h-[600px] flex flex-col-reverse justify-center items-center gap-y-[30px] box-border pt-[80px] pb-[100px] lg:flex lg:flex-row lg:justify-center lg:gap-x-[140px]"
+    >
+      <div
+        class="flex flex-col gap-y-[30px] px-[20px] lg:relative lg:bottom-[80px]"
+      >
+        <h1 class="text-2xl text-nav_bg lg:text-4xl">
+          Extensible and customizable
+        </h1>
+        <p class="text-xl text-nav_bg lg:w-[700px] lg:text-2xl">
+          Want even more features? Install extensions to add new languages,
+          themes, debuggers, and to connect to additional services. Extensions
+          run in separate processes, ensuring they won't slow down your editor.
+          <span class="text-button_bg">Learn more about extensions.</span>
+        </p>
+      </div>
+      <img src="./Assets/logo_muultiple.png" alt="" class="w-[500px]    hover:scale-125   ease-in duration-500" />
+    </figure>
+
+    <!-- FIFTH FIGURE -->
+    <figure
+      class="bg-coursel_white_bg h-[600px] flex flex-col justify-center items-center gap-y-[30px] box-border pt-[80px] pb-[100px] lg:flex lg:flex-row lg:justify-center lg:gap-x-[140px]"
+    >
+      <img src="./Assets/square_A.svg" alt="" class="w-[500px]" />
+
+      <div
+        class="flex flex-col gap-y-[30px] px-[20px] lg:relative lg:bottom-[80px]"
+      >
+        <h1 class="text-2xl text-nav_bg lg:text-4xl">
+          Deploy with confidence and ease
+        </h1>
+        <p class="text-xl text-nav_bg lg:w-[700px] lg:text-2xl">
+          With <span class="text-button_bg">Microsoft Azure</span> you can
+          deploy and host your React, Angular, Vue, Node, Python (and more!)
+          sites, store and query relational and document based data, and scale
+          with serverless computing, all with ease,
+          <span class="text-button_bg"> all from within VS Code</span>
+        </p>
+      </div>
+    </figure>
+
+    <!-- SMALL IMAGES OF LANGUAGES -->
+    <article
+      class="bg-coursel_bg h-[90vh] text-nav_bg flex flex-col gap-y-[25px] justify-center i"
+    >
+      <h1 class="text-2xl font-normal text-center">VS Code for</h1>
+
+      <!--DESKTOP FIRST  ROW   STARTTTT-->
+      <div
+        class="flex flex-col gap-y-[16px] lg:flex lg:flex-row lg:gap-x-[90px] lg:justify-center"
+      >
+        <!-- MOBILE  FIRST ROW -->
+        <div class="flex flex-row gap-x-[290px] pl-[20px] lg:gap-x-[60px]">
+          <section class="flex flex-row">
+            <img src="./Assets/javascript.svg" alt="" class="w-[40px]" />
+            <h1 class="text-xl">Javascript</h1>
+          </section>
+
+          <section class="flex flex-row">
+            <img src="./Assets/python.svg" alt="" class="w-[40px]" />
+            <h1 class="text-xl">Phython</h1>
+          </section>
+        </div>
+
+        <!--MOBILE  SECOND   ROW -->
+        <div class="flex flex-row gap-x-[340px] pl-[20px] lg:gap-x-[100px]">
+          <section class="flex flex-row">
+            <img src="./Assets/java.svg" alt="" class="w-[40px]" />
+            <h1 class="text-xl">Java</h1>
+          </section>
+
+          <section class="flex flex-row">
+            <img src="./Assets/markdown.svg" alt="" class="w-[40px]" />
+            <h1 class="text-xl">Markdown</h1>
+          </section>
+        </div>
+
+        <!--MOBILE  THIRD ROW -->
+        <div class="flex flex-row gap-x-[290px] pl-[20px] lg:gap-x-[100px]">
+          <section class="flex flex-row">
+            <img src="./Assets/typescript.svg" alt="" class="w-[40px]" />
+            <h1 class="text-xl">TypeScript</h1>
+          </section>
+
+          <section class="flex flex-row">
+            <img src="./Assets/cpp.svg" alt="" class="w-[40px]" />
+            <h1 class="text-xl">C/C++</h1>
+          </section>
+        </div>
+      </div>
+      <!-- DESKTOP  FIRST  ROW   ENDDDDDD-->
+
+      <!--DESKTOP  SECOND  ROW   STARTTTT-->
+      <div
+        class="flex flex-col gap-y-[16px] lg:flex lg:flex-row lg:gap-x-[90px] lg:justify-center"
+      >
+        <!--MOBILE FOURTH ROW -->
+        <div class="flex flex-row gap-x-[340px] pl-[20px] lg:gap-x-[100px]">
+          <section class="flex flex-row   lg:relative   lg:right-[30px]">
+            <img src="./Assets/json.svg" alt="" class="w-[40px]" />
+            <h1 class="text-xl">JSON</h1>
+          </section>
+
+          <section class="flex flex-row      lg:relative   lg:right-[30px]">
+            <img src="./Assets/powershell.svg" alt="" class="w-[40px]" />
+            <h1 class="text-xl">Powershell</h1>
+          </section>
+        </div>
+
+        <!-- MOBILE  FIFTH   ROW -->
+        <div class="flex flex-row gap-x-[295px] pl-[20px] lg:gap-x-[100px]">
+          <section class="flex flex-row     lg:relative   lg:right-[55px]">
+            <img src="./Assets/html.svg" alt="" class="w-[40px]" />
+            <h1 class="text-xl">HTML/CSS</h1>
+          </section>
+
+          <section class="flex flex-row       lg:relative   lg:right-[95px]">
+            <img src="./Assets/csharp.svg" alt="" class="w-[40px]" />
+            <h1   class="text-xl">C#</h1>
+          </section>
+        </div>
+
+        <!-- MOBILE  SIXTH ROW -->
+        <div class="flex flex-row gap-x-[350px] pl-[20px] lg:gap-x-[100px]">
+          <section class="flex flex-row      lg:relative   lg:right-[30px]">
+            <img src="./Assets/php.svg" alt="" class="w-[40px]" />
+            <h1 class="text-xl">PHP</h1>
+          </section>
+
+          <section class="flex flex-row     lg:relative   lg:left-[10px]">
+            <img src="./Assets/yaml.svg" alt="" class="w-[40px]" />
+            <h1 class="text-xl">YAML</h1>
+          </section>
+        </div>
+
+      </div>
+      <!--DESKTOP  SECOND  ROW   ENDDDDDD-->
+
+      <p class="text-button_bg text-center text-xl">
+        and many more languages on the Marketplace...
+      </p>
+
+      <div class="text-center">
+        <button
+          class="bg-button_bg font-semibold text-2xl text-white px-[40px] py-[15px]"
+        >
+          Get Started Now
+        </button>
+      </div>
+    </article>
+
+    <!-- DOWNLOAD FOR WINDOWS , LINUX,   MAC -->
+    <figcaption
+      class="bg-coursel_white_bg flex flex-col h-[100vh] flex flex-col justify-center items-center pb-[100px]     lg:flex lg:flex-row  lg:items-center  lg:justify-center lg:gap-x-[56px] lg:h-[45vh]"
+    >
+      <!-- FIRST   ROW  (WINDOWS,,, LINUX)   START-->
+      <aside
+        class="flex flex-row gap-x-[46px] h-[65vh] justify-between items-center"
+      >
+        <!-- WINDOWS    COLUMN    START-->
+        <div
+          class="flex flex-col h-[65vh] gap-y-[24px] justify-center items-center relative bottom-[10px]"
+        >
+          <!-- FIRST  ROW -->
+          <img src="./Assets/windows-logo.png" alt="" class="w-[110px]" />
+          <!-- SECOND   ROW -->
+          <button
+            class="bg-button_bg text-coursel_white_bg px-[78px] py-[20px] flex flex-col justify-center items-center"
+          >
+            <section class="flex flex-row gap-x-[20px]">
+              <span class="text-xl font-medium">
+                <i class="fa-solid fa-download"></i>
+              </span>
+              <h1 class="lg:text-2xl lg:font-semibold">Windows</h1>
+            </section>
+
+            <h1 class="text-xs lg:text-sm lg:font-semibold">
+              Windows 8, 10, 11
+            </h1>
+          </button>
+          <!-- THIRD  ROW -->
+          <div>
+            <section class="flex flex-row gap-x-[20px] h-[30px] items-end">
+              <h1 class="text-nav_bg font-medium text-xl">User Installer</h1>
+              <div>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x64
+                </button>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x86
+                </button>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  Arm64
+                </button>
+              </div>
+            </section>
+
+            <section class="flex flex-row gap-x-[20px] h-[30px] items-end">
+              <h1 class="text-nav_bg font-medium text-xl">System Installer</h1>
+
+              <div>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x64
+                </button>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x86
+                </button>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  Arm64
+                </button>
+              </div>
+            </section>
+
+            <section class="flex flex-row gap-x-[20px] h-[30px] items-end">
+              <h1 class="text-nav_bg font-medium text-xl">.zip</h1>
+
+              <div>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x64
+                </button>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x86
+                </button>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  Arm64
+                </button>
+              </div>
+            </section>
+
+            <!-- THIRD ROW END -->
+          </div>
+        </div>
+        <!-- WINDOWS   ENDDD -->
+
+        <!-- LINUX    COLUMN    START-->
+
+        <div
+          class="flex flex-col h-[65vh] gap-y-[24px] justify-center items-center"
+        >
+          <!-- FIRST  ROW -->
+          <img src="./Assets/linux-logo.png" alt="" class="w-[100px]" />
+          <!-- SECOND ROW -->
+          <div>
+            <!-- first  BUTTTON START -->
+            <button
+              class="bg-button_bg text-coursel_white_bg px-[44px] py-[20px]"
+            >
+              <section class="flex flex-row gap-x-[20px]">
+                <span class="text-white text-xl font-medium">
+                  <i class="fa-solid fa-download"></i>
+                </span>
+                <h1 class="lg:text-2xl lg:font-semibold">.deb</h1>
+              </section>
+              <h1 class="text-xs lg:text-sm lg:font-semibold">
+                Debian, Ubuntu
+              </h1>
+            </button>
+            <!--first  BUTTTON END  -->
+            <!-- SECOND  BUTTTON START -->
+            <button
+              class="bg-button_bg text-coursel_white_bg px-[40px] py-[20px]"
+            >
+              <section class="flex flex-row gap-x-[20px]">
+                <span class="text-white text-xl font-medium">
+                  <i class="fa-solid fa-download text-white"></i>
+                </span>
+                <h1 class="lg:text-2xl lg:font-semibold">.rpm</h1>
+              </section>
+              <h1 class="text-xs lg:text-sm lg:font-semibold">
+                Red Hat,Fedora,SUSE
+              </h1>
+            </button>
+            <!--SECOND  BUTTTON END  -->
+          </div>
+          <!-- THIRD  ROW -->
+          <div>
+            <section class="flex flex-row gap-x-[20px] h-[30px] items-end">
+              <h1 class="text-nav_bg font-medium text-xl">.deb</h1>
+
+              <div>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x64
+                </button>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x86
+                </button>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  Arm64
+                </button>
+              </div>
+            </section>
+
+            <section class="flex flex-row gap-x-[20px] h-[30px] items-end">
+              <h1 class="text-nav_bg font-medium text-xl">.rpm</h1>
+              <div>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x64
+                </button>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x86
+                </button>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  Arm64
+                </button>
+              </div>
+            </section>
+
+            <section class="flex flex-row gap-x-[20px] h-[30px] items-end">
+              <h1 class="text-nav_bg font-medium text-xl">.zip</h1>
+
+              <div>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x64
+                </button>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x86
+                </button>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  Arm64
+                </button>
+              </div>
+            </section>
+
+            <section class="flex flex-row gap-x-[20px] h-[30px] items-end">
+              <h1 class="text-nav_bg font-medium text-xl">.snap</h1>
+
+              <div>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x64
+                </button>
+                <button
+                  class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+                >
+                  x86
+                </button>
+              </div>
+            </section>
+
+            <!-- THIRD ROW END -->
+            <!-- THIRD  ROW ENDD -->
+          </div>
+        </div>
+        <!-- LINUX   ENDDD -->
+      </aside>
+      <!-- FIRST   ROW  (WINDOWS,,, LINUX)   START-->
+
+      <!-- MACINTOSH    COLUMN    START-->
+      <div
+        class="flex flex-col h-[65vh] gap-y-[24px] justify-center items-center relative bottom-[10px] lg:relative lg:bottom-[50px]"
+      >
+        <!-- FIRST  ROW -->
+        <img src="./Assets/apple-logo.svg" alt="" class="w-[110px]" />
+        <!-- SECOND   ROW -->
+        <button class="bg-button_bg text-coursel_white_bg px-[120px] py-[20px]">
+          <section class="flex flex-row gap-x-[20px]">
+            <span class="text-xl font-medium">
+              <i class="fa-solid fa-download"></i>
+            </span>
+            <h1 class="lg:text-2xl lg:font-semibold">Mac</h1>
+          </section>
+          <h1 class="text-xs lg:text-sm lg:font-semibold">macOS 10.11+</h1>
+        </button>
+        <!-- THIRD  ROW -->
+        <div>
+          <section class="flex flex-row gap-x-[20px] h-[30px] items-end">
+            <h1 class="text-nav_bg font-medium text-xl">.zip</h1>
+
+            <div>
+              <button
+                class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+              >
+                Universal
+              </button>
+              <button
+                class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+              >
+                Intel chip
+              </button>
+              <button
+                class="bg-button_bg text-coursel_white_bg px-[2px] rounded-sm"
+              >
+                Apple silicon
+              </button>
+            </div>
+          </section>
+        </div>
+        <!-- THIRD ROW END -->
+      </div>
+      <!-- MACINTOSH   ENDDD -->
+    </figcaption>
+
+    <!-- CONTENT   BEFORE   FOOTER -->
+    <summary
+      class="h-[100vh] bg-coursel_bg text-nav_bg flex flex-col justify-center items-center gap-y-[136px] lg:h-[55vh]"
+    >
+      <!-- first  box -->
+      <div
+        class="flex flex-col gap-y-[136px] lg:flex lg:flex-row lg:gap-x-[300px]"
+      >
+        <section class="flex flex flex-col gap-y-[16px]">
+          <h1
+            class="text-nav_bg text-2xl font-semibold text-center lg:text-3xl"
+          >
+            Want new features sooner?
+          </h1>
+          <p class="text-lg font-normal text-nav_bg text-center">
+            Get the <span class="text-button_bg">Insiders build </span>instead.
+          </p>
+        </section>
+
+        <section class="flex flex flex-col gap-y-[16px]">
+          <h1 class="text-nav_bg text-2xl font-semibold">
+            Use
+            <span class="text-button_bg text-center lg:text-3xl"
+              >vscode.dev</span
+            >
+            for quick edits online!
+          </h1>
+          <p class="text-center">GitHub, Azure Repos, and local files.</p>
+        </section>
+      </div>
+
+      <!-- second box -->
+      <div class="flex flex flex-col gap-y-[16px]">
+        <h1 class="text-sm text-center">LICENSE AND PRIVACY TERMS</h1>
+        <p
+          class="w-[490px] leading-10 text-sm font-normal text-center lg:w-[790px] lg:text-base lg:leading-[46px]"
+        >
+          By downloading and using Visual Studio Code, you agree to the
+          <span class="text-button_bg">license terms</span> and
+          <span class="text-button_bg">privacy statement.</span> VS Code
+          automatically sends telemetry data and crash dumps to help us improve
+          the product. If you would prefer not to have this data sent please go
+          see
+          <span class="text-button_bg">How to Disable Crash Reporting</span> to
+          learn how to disable it.
+        </p>
+      </div>
+    </summary>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-nav_bg text-white h-[190px] flex flex-col justify-center gap-y-[24px] lg:flex lg:flex-row lg:justify-around lg:items-center"
+    >
+      <!-- FIRST ITEM -->
+      <ul class="flex flex-row gap-x-[36px]">
+        <li>Hello from Seattle</li>
+        <li>Follow @code</li>
+        <li class="flex flex-row">
+          <button
+            class="flex flex-row justify-center items-center h-[26px] px-[8px] py-[1px] bg-white gap-x-[8px] rounded-md"
+          >
+            <img src="./Assets/github_ICON.svg" alt="" class="w-[16px]" />
+            <h1 class="font-semibold text-nav_bg">Star</h1>
+          </button>
+
+          <i
+            class="fa-solid fa-caret-left text-white relative left-[2px] top-[7px]"
+          ></i>
+
+          <button
+            class="bg-white text-nav_bg flex flex-row h-[26px] px-[8px] py-[1px] rounded-md"
+          >
+            <h1>139,693</h1>
+          </button>
+        </li>
+      </ul>
+
+      <!-- SECOND  ITEM -->
+      <ul class="flex flex-row gap-x-[36px]">
+        <li>Support</li>
+        <li>Privacy</li>
+        <li>Terms of Use</li>
+        <li>License</li>
+        <li>
+          <img src="./Assets/microsoft-logo.png" alt="" class="w-[120px]" />
+          <h1>© 2022 Microsoft</h1>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
+ 

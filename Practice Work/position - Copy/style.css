@@ -1,0 +1,30 @@
+header{
+   /* position: relative; */
+}
+
+
+header{
+   position: relative;
+}
+#box1{
+   
+ }
+ #box2{
+    
+ }
+ #box3{
+    position: sticky;
+    top: 20px;
+    left: 10px;
+ }
+ #box4{
+    
+ }
+
+ p{
+   /* position: relative;
+   top: 500px; */
+   font-size: 24px;
+   line-height: 32px;
+   word-spacing: 8px;
+ }

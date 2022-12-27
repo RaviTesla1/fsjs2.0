@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    outline: 0;
+    margin: 0;
+    
+}
+body{
+    height: 100vh;
+    max-width: 1000px;
+}
+img[alt="brand-logo"]{
+    width: 140px;
+}
+ul{
+    font-size: 24px;
+    font-family: "Orbitron",monospace ;
+    font-weight: 500;
+    list-style: none;
+}
+ul li:nth-child(1){
+    text-decoration: underline;
+}
+.nav-button{
+    padding: 8px 48px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 3px solid black;
+}
+nav  div:last-child{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 12px;
+}
+nav{
+   
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 240px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+}
+
+img[alt="square-pattern"]{
+    position:absolute ;
+    
+    top: 390px;
+    left: 185px;
+}
+img[alt="person-hero-iamge"]{
+    width: 420px;
+    position:absolute ;
+    bottom: 80px;
+    left: 121px;
+}
+ .hero-container-right{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: absolute;
+    top: 10px;
+} 
+section[aria-label="banner"]{
+    height: 70%;
+    width:50% ;
+}
+section[aria-label="navbar"]{
+    width:50% ;
+    height: 30%;
+}
+
+
+
+

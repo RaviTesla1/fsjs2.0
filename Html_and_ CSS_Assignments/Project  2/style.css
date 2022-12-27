@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    color: rgb(229, 232, 235);
+    font-family: Poppins,'Courier New', Courier, monospace;
+}
+:root{
+    --btn_bg: rgb(186, 12, 197);
+}
+body{
+    background-image: url("./Assets/bg.png");
+    background-size: 100vw 100vh;
+     background-repeat: no-repeat;
+     /* filter: opacity(25%);
+     z-index: -1; */
+    /* min-width: 475px;
+    min-height: 475px; */
+
+}
+.logo{
+    width: 100px;
+}
+button{
+    background-color: var(--btn_bg);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.list-item{
+    font-size: 18px;
+    font-weight: 400;
+    list-style: none;
+    
+}
+ul{
+    display: flex;
+    /* flex-direction: row; */
+    column-gap: 70px;
+}
+.hero-heading{
+    font-size: 54px;
+    font-weight: 600;
+    width: 580px;
+    font-family: Montserrat,'Courier New', Courier, monospace;
+}
+.hero-description{
+    font-size: 24px;
+    font-weight: 400;
+}
+.line{
+    height: 36px;
+    width: 2px;
+    background-color: rgb(229, 232, 235);
+}
+.navbar{
+    display: flex;
+     flex-direction: row;
+     box-sizing: border-box;
+     align-items: center;
+     column-gap: 40px;
+     height: 80px;
+     background-color: rgb(21, 21, 21);
+     padding: 0   100px;
+}
+.button-small{
+    position: relative;
+    left: 340px;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 200px;
+}
+.hero{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+}
+.hide-seek{
+    /* display: none; */
+    visibility: hidden;
+    font-size: 40px;
+}
+
+@media only screen and (min-width: 370px) and (max-width:480px){
+    .logo{
+        width: 100px;
+    }
+    .line{
+      visibility : hidden;
+    }
+    .grow-list{
+       visibility : hidden;
+    }
+    .hide-seek{
+        display: block;
+        visibility: visible;
+        color: aqua;
+    }
+
+}

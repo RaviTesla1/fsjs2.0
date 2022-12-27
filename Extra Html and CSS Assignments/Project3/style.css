@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  --color-primary: #f4694c;
+  --bg-black: #000308;
+  --color-white: #fff;
+  --color-grey: rgb(101, 100, 100);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(54, 143, 98);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+
+  margin: 0 auto;
+}
+/* HEADER */
+/* .navHeaderWrapper{
+    background-image: url("./Assets/Photos/futuristic-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+nav ul{
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    list-style: none;
+    color: var(--color-white);
+}
+nav ul li{
+    transition: all 1s ease-in-out;
+}
+nav ul li:hover{
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+}
+.orangeBtn{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: 18px 34px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    transition: all 1s ease-in-out;
+}
+.orangeBtn:hover{
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+}
+.navbtns button:first-child{
+    color: var(--color-white);
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    transition: all 1s ease-in-out;
+    padding: 18px 34px;
+}
+.navbtns button:first-child:hover{
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+}
+nav{
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    column-gap: 160px;
+    align-items: center;
+    margin-left: 112px;
+}
+.navbtns{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    position: relative;
+    left: 140px;
+}
+/* HEADER */
+header{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10%;
+}
+.left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.right{
+    width: 34%;
+    position: relative;
+    top: 65px;
+   
+}
+.threeElements{
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+.twoElements{
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+.left h1{
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--color-white);
+}
+.left p{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-bottom: 44px;
+}
+.header button:last-child{
+    color: var(--color-white);
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 1s ease-in-out;
+    padding: 18px 34px;
+}
+.header button:last-child{
+    margin-left: 20px;
+}
+
+.header button:last-child:hover{
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+}
+.twoElements img{
+    width: 50px;
+    height: 8px;
+    position: relative;
+    top: 75px;
+}
+.twoElements h3{
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--color-white);
+}
+.arrow{
+    width: 100px;
+    height: 18px;
+    position: relative;
+    top: 270px;
+}
+.playBtn{
+    position: relative;
+    left: 100px;
+}
+.navHeaderWrapper{
+    background-image: url("./Assets/Photos/futuristic-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(10%);
+    filter: contrast(-10%);
+}
+/* FOUR CARDS */
+figure{
+    height: 100vh;
+}
+.gameCard1{
+    background-image: url("./Assets/Photos/image\ 2.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+.gameCard2{
+    background-image: url("./Assets/Photos/image\ 4.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+.gameCard3{
+    background-image: url("./Assets/Photos/image\ 3.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+.gameCard4{
+    background-image: url("./Assets/Photos/Rectangle\ 56.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+.cardWrapper{
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    align-items: center;
+}
