@@ -15,20 +15,15 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: rgb(54, 143, 98);
+  background: rgb(237, 240, 239);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  line-height: 1.75;
+  /* line-height: 1.75; */
   color: #000000;
 
   margin: 0 auto;
 }
 /* HEADER */
-/* .navHeaderWrapper{
-    background-image: url("./Assets/Photos/futuristic-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 nav ul{
     font-size: 18px;
     font-weight: 400;
@@ -179,26 +174,45 @@ header{
 /* FOUR CARDS */
 figure{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.blackBig{
+    font-size: 60px;
+    font-weight: 400;
+}
+.gameCards{
+    width: 360px;
+    height: 500px;
 }
 .gameCard1{
     background-image: url("./Assets/Photos/image\ 2.png");
     background-repeat: no-repeat;
-    background-size: contain; 
+    background-size: cover; 
+    background-position: -350px 0px;
 }
 .gameCard2{
     background-image: url("./Assets/Photos/image\ 4.png");
     background-repeat: no-repeat;
-    background-size: contain; 
+    background-size: cover; 
+    background-position: -270px 0px;
+     
 }
 .gameCard3{
     background-image: url("./Assets/Photos/image\ 3.png");
     background-repeat: no-repeat;
-    background-size: contain; 
+    background-size: cover; 
+    background-position: -210px 0px;
+     
 }
 .gameCard4{
     background-image: url("./Assets/Photos/Rectangle\ 56.png");
     background-repeat: no-repeat;
-    background-size: contain; 
+    background-size: cover; 
+    background-position: -270px 0px;
+    
 }
 .cardWrapper{
     height: 70%;
@@ -207,3 +221,116 @@ figure{
     column-gap: 40px;
     align-items: center;
 }
+.displayRow{
+    height: 160px;
+    background: rgba(27, 27, 28, 0.7);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    position: relative;
+    top: 340px;
+}
+.displayCol{
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+    
+}
+.displayCol h1{
+    font-size: 26px;
+    font-weight: 300;
+}
+.displayCol p{
+    font-size: 22px;
+    font-weight: 300;
+}
+.displayCol  div img{
+    width: 100px;
+}
+.fiveStars{
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+}
+.fiveStars  section img{
+    width: 20px;
+}
+.displayRow section button{
+    font-size: 16px;
+    font-weight: 300;
+}
+/* ARTICLE WITH ONE IMAGE */
+.oneImageText{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    column-gap: 360px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.articleTwoBtns button:last-child{
+    color: var(--color-primary);
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 1s ease-in-out;
+    padding: 18px 34px;
+    margin-left: 20px;
+}
+
+
+.articleTwoBtns button:last-child:hover{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+.oneImageText div{
+    width: 500px;
+}
+.articleLeft img{
+    width: 660px;
+    height: 580px;
+}
+.greyText{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-grey);
+}
+/* FOUR  CARDS */
+.fourGameCards section img{
+    width: 320px;
+    height: 420px;
+}
+.cardRight{
+    width: 320px;
+    height: 420px
+}
+ .cardRight h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.cardRight h3{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+.fourGameCards{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+.fourGameCardsParent{
+    display: grid;
+    grid-template-columns: 680px 680px;
+    column-gap: 60px;
+    row-gap: 60px;
+    justify-content: center;
+
+}
+
+
