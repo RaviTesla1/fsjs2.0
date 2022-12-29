@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
 html {
   font-size: 100%;
 } /*16px*/
@@ -114,7 +119,7 @@ header{
     flex-direction: row;
     column-gap: 40px;
 }
-.left h1{
+.whiteLarge{
     font-size: 60px;
     font-weight: 600;
     color: var(--color-white);
@@ -165,7 +170,9 @@ header{
     left: 100px;
 }
 .navHeaderWrapper{
-    background-image: url("./Assets/Photos/futuristic-bg.png");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),
+     rgba(0, 0, 0, 0.7)),
+     url("./Assets/Photos/futuristic-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(10%);
@@ -180,12 +187,17 @@ figure{
     justify-content: center;
 }
 .blackBig{
-    font-size: 60px;
-    font-weight: 400;
+    font-size: 58px;
+    font-weight: 500;
 }
+
 .gameCards{
     width: 360px;
     height: 500px;
+    transition: all 1s ease-in-out;
+}
+.gameCards:hover{
+    transform: scale(1.1);
 }
 .gameCard1{
     background-image: url("./Assets/Photos/image\ 2.png");
@@ -222,29 +234,31 @@ figure{
     align-items: center;
 }
 .displayRow{
-    height: 160px;
+    height: 134px;
     background: rgba(27, 27, 28, 0.7);
     color: var(--color-white);
     display: flex;
     flex-direction: row;
     column-gap: 20px;
     position: relative;
-    top: 340px;
+    top: 365px;
 }
 .displayCol{
-    height: 360px;
+    height: 280px;
+    padding-top: 10px;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
-    row-gap: 1px;
     
 }
 .displayCol h1{
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 300;
 }
 .displayCol p{
     font-size: 22px;
     font-weight: 300;
+    margin: 12px 0px;
 }
 .displayCol  div img{
     width: 100px;
@@ -261,6 +275,13 @@ figure{
     font-size: 16px;
     font-weight: 300;
 }
+.gameCards section button{
+  position: relative;
+  top: 24px;
+}
+/* FOUR CARDS DISPLAY ROW ENDDDD */
+
+
 /* ARTICLE WITH ONE IMAGE */
 .oneImageText{
     height: 100vh;
@@ -288,6 +309,9 @@ figure{
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
 }
+.articleTwoBtns{
+    margin-top: 30px;
+}
 .oneImageText div{
     width: 500px;
 }
@@ -300,14 +324,56 @@ figure{
     font-weight: 400;
     color: var(--color-grey);
 }
-/* FOUR  CARDS */
+/* FOUR  CARDS    GRIDDD*/
+/* WOLVERINE SNAKE  SPIDERMAN  MUMMY */
+  
+.GameCardsUpper{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 23%;
+}
+.GameCardsUpper h1{
+    width: 50%;
+}
+.GameCardsUpper section{
+    width: 10%;
+}
+  .twoArrows{
+      width: 10%;
+      display: flex;
+      flex-direction: row;
+      column-gap: 10px;
+  }
+  .twoArrows .background{
+      width: 80px;
+      height: 80px;
+  }
+  
+  .twoArrows .background img{
+      width: 36px;
+      margin: 30px 18px;
+  }
+  .twoArrows .background:first-child{
+    background-color: #DDBFB9;
+  }
+  .twoArrows .background:last-child{
+      background-color: var(--color-primary);
+    }
 .fourGameCards section img{
     width: 320px;
     height: 420px;
 }
 .cardRight{
     width: 320px;
-    height: 420px
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    position: relative;
+    top: 50px;
 }
  .cardRight h1{
     font-size: 30px;
@@ -323,14 +389,129 @@ figure{
     display: flex;
     flex-direction: row;
     column-gap: 30px;
+    
+}
+.cardLeft{
+    transition: all 1s ease-in-out;
+}
+.cardLeft:hover{
+    transform: scale(1.2);
 }
 .fourGameCardsParent{
+    height: 125vh;
     display: grid;
     grid-template-columns: 680px 680px;
-    column-gap: 60px;
+    column-gap: 80px;
     row-gap: 60px;
     justify-content: center;
 
 }
+/* TWO LAST PAGES */
+footer{
+    background-color: var(--bg-black);
+}
+.seconlast h1{
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.divWrapperRow{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 66px;
+
+    background-image: url("./Assets/Icons/GAMES\ OF\ THE\ WORLD.svg");
+    background-repeat: no-repeat;
+    background-size: 1100px;
+    background-position:500px 100px ;
+}
+.twoImagesRow{
+    display: flex;
+    flex-direction: row;
+    column-gap: 200px;
+}
+.twoImagesRow section:last-child{
+    position: relative;
+    top: 210px;
+}
+.divWrapperRow section:first-child{
+    width: 30%;
+}
+.divWrapperRow section:last-child{
+    width: 60%;
+}
+.rightFooter p{
+    margin-bottom: 80px;
+    width: 60%;
+}
+
+/* LAST PAGE */
+
+.lastPageUpper{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)),
+     url("./Assets/Photos/Rectangle\ 606.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:1200px 800px ;
+}
+.lastPage{
+    background-color: var(--bg-black);
+    height: 110vh;
+}
+.footerRight ul li{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-white);
+    list-style: none;
+    transition: all 1s ease-in-out;
+}
+.footerRight ul li:hover{
+    transform: scale(1.1);
+    color: var(--color-primary);
+}
+.footerRight ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.footerLeft{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.socialMediaIcons{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.footerRight{
+    width: 58%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+}
+.lastPageLower{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
