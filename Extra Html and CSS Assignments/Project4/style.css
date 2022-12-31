@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-color: rgb(236, 240, 240);
+    /* max-width: 1440px;
+    margin: 0 auto; */
+}
+:root{
+    --purple:#6663E9;
+    --myWhite: #F6F8FA ;
+    --black: #121111;
+    --grey: #4d4d4d;
+}
+.navMainWrapper{
+    background-image: url("./Photos/Untitled\ design.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*  NAV */
+nav{
+    height: 15vh;
+    padding: ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 400px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+}
+nav ul li{
+    list-style: none;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--myWhite);
+    transition: all 1s ease-in-out;
+}
+nav ul li:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+}
+/* HR */
+hr{
+    position: relative;
+    top: 30px;
+    margin: 0 160px;
+}
+
+
+/* MAIN */
+main{
+    height: 95vh;
+    color: var(--myWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 34px;
+    padding-left: 200px;
+}
+main h1{
+    font-size: 80px;
+}
+main p{
+    font-size: 20px;
+    line-height: 34px;
+}
+main section button{
+        background-color: var(--purple);
+        color: var(--myWhite);
+        font-size: 20px;
+        font-weight: 700;
+        padding: 24px 60px;
+        border: none;
+        border-radius: 34px;
+}
+/* FIVE  LOGOS */
+.fiveLogosParent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.fiveLogosWrapper{
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: 1px solid rgb(223, 206, 206);
+    position: absolute;
+}
+.fiveLogosWrapper ul{
+    height: 26vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    padding: 0px 100px;
+}
+.fiveLogosWrapper ul li{
+    font-size: 58px;
+    font-weight: 500;
+    color: var(--purple);
+    font-family: "sans-serif";
+    list-style: none;
+}
+
+/* 9  HOUSES */
+.pricingCol h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+.pricingCol p{
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--purple);
+}
+.pricing section button{
+    background-color: var(--purple);
+    color: var(--myWhite);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 21px 41px;
+    border: none;
+    border-radius: 34px;
+}
+.pricing{
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: 1px solid rgb(223, 206, 206);
+    height: 120px;
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    position: relative;
+    top: 400px;
+    left: 60px;
+}
+.pricingCol{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.houses{
+    height: 470px;
+    width: 450px;
+    border-radius: 24px;
+}
+.house1{
+    background-image: url("./Photos/cardImage1.png");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: -200px 0px;
+}
+.house2{
+    background-image: url("./Photos/cardImage2.png");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: -200px 0px;
+    margin-top: 40px;
+}
+.house3{
+    background-image: url("./Photos/cardImage3.png");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: -200px 0px;
+    background-position: -200px 0px;
+    margin-top: 80px;
+}
+.house4{
+    background-image: url("./Photos/cardImage4.png");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: -200px 0px;
+}
+.house5{
+    background-image: url("./Photos/cardImage5.png");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: -200px 0px;
+    position: relative;
+    bottom: 40px;
+}
+.house6{
+    background-image: url("./Photos/cardImage6.png");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: -200px 0px;
+    position: relative;
+    bottom: 80px;
+}
+.house7{
+    background-image: url("./Photos/cardImage7.png");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: -200px 0px;
+}
+.house8{
+    background-image: url("./Photos/cardImage8.png");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: -0px 0px;
+    margin-top: 40px;
+}
+.house9{
+    background-image: url("./Photos/cardImage9.png");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: -200px 0px;
+    margin-top: 80px;
+}
+.lowerFigure{
+    height: 256vh;
+    display: grid;
+    grid-template-columns: 470px 470px 470px;
+    grid-template-rows: 730px 580px 600px;
+    place-content: center;
+}
+.upperFigure{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.blackLg{
+    font-size: 70px;
+    font-weight: 700;
+    position: relative;
+    top: 100px;
+}
+/* TWO FIGURES WTH TEXT */
+.greySmall{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grey);
+    word-spacing: 5px;
+    width: 460px;
+    margin-top: 80px;
+}
+.btnPurple{
+    background-color: var(--purple);
+    color: var(--myWhite);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 21px 41px;
+    border: none;
+    border-radius: 34px; 
+}
+.leftSectionImage div img{
+    width: 660px;
+    height: 660px;
+    border-radius: 40px;
+}
+.rightSectionImage div img{
+    width: 660px;
+    height: 660px;
+    border-radius: 40px;
+}
+.articleSecond{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 200px;
+    background-image: url("./Icons/featureImageBg2.png");
+    background-repeat: no-repeat;
+    background-size: 930px 800px;
+    background-position: 765px 100px;
+
+}
+.articleFirst{
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 200px;
+    justify-content: center;
+    background-image: url("./Icons/featureImageBg1.svg");
+    background-repeat: no-repeat;
+    background-size: 922px 800px;
+    background-position: 0px 180px;
+}
+.rightSectionText{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+/* SUMARRY */
+summary{
+    height: 90vh;
+}
+.summaryWrapper{
+    background-color: var(--purple);
+    height: 80vh;
+    margin: 100px;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+}
+.summaryWrapper h1{
+    text-align: center;
+    font-size: 68px;
+    font-weight: 500;
+    color: var(--myWhite);
+}
+.summaryWrapper p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #d6d0d0;
+    word-spacing: 4px;
+}
+.email{
+    background-color: #5957d7;
+    padding: 20px 200px 20px  70px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+}
+.summaryTwoBtns button{
+    background-color: var(--myWhite);
+    padding: 20px 46px 20px 46px;
+    color: var(--purple);
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 30px;
+    border: none;
+}
+.summaryTwoBtns{
+    display: flex;
+    flex-direction: row;
+}
+.summaryTwoBtns div img{
+   position: relative;
+   left: 60px;
+   top: 8px;
+   height: 30px;
+}
+
+/* FOOTER */
+footer{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    column-gap: 230px;
+    justify-content: center;
+    align-items: center;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 44px;
+}
+.threeLogos{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+footer div p{
+    font-size: 30px;
+    font-weight: 400;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 44px;
+}
+ul li{
+    font-size: 20px;
+    color: #726f6f;
+    font-weight: 400;
+    list-style: none;
+}
+footer ul li:first-child{
+    font-size: 22px!important;
+    font-weight: 400!important;
+    color: #131212!important;
+}
+
