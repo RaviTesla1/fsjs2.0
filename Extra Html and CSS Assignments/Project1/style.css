@@ -153,6 +153,10 @@ article{
     row-gap: 20px;
     justify-content: center;
     align-items: center;
+    transition: all 1s ease-in-out;
+}
+.cards:hover{
+    transform: scale(1.1);
 }
 .para2{
     color: #ffffff;
@@ -258,6 +262,10 @@ summary{
     row-gap: 24px;
     padding: 20px 30px;
     box-sizing: border-box;
+    transition: all 1s ease-in-out;
+}
+.review:hover{
+    transform: scale(1.1);
 }
 .review p{
     color: #f5ebeb;
@@ -318,9 +326,17 @@ figure{
     height: 75vh;
     background: url("./Assets/Photos/Diamond-right.png") left no-repeat,
       url("./Assets/Photos/Diamond-left.png") right no-repeat,
-      url("./Assets/Photos/Rectangle\ 6774.png") no-repeat,
-      url("./Assets/Photos/Rectangle\ 6773.png") no-repeat;
+      url("./Assets/Photos/Rectangle\ 6774.png") no-repeat ,
+      url("./Assets/Photos/Rectangle\ 6773.png") no-repeat ;
+      background-size: contain,contain,cover,cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 } 
+.pinkWhite .black{
+    color: #151515;
+}
 footer{
     background-color: #151515;
     color: var(--textWhite);

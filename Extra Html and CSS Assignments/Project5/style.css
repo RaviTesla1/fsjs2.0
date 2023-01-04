@@ -251,8 +251,15 @@ article{
 }
 
 /* FIVE  HEADPHONES */
+#fiveHeadphones{
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 170px;
+}
 #headingLogos{
-    height: 30vh;
+    /* height:20% ; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -262,10 +269,11 @@ article{
     width: 400px;
 }
 #fiveHeadphonesLogos{
-    height: 85vh;
+    /* height: 80%; */
     display: grid;
     grid-template-columns: 170px 170px 170px;
     column-gap: 80px;
+    row-gap: 140px;
     justify-content: center;
 }
 #fiveHeadphonesLogos section p{
@@ -273,7 +281,9 @@ article{
     font-weight: 500;
     align-self: flex-end;
 }
-#fiveHeadphonesLogos section div{
+
+
+#fiveHeadphonesLogos div  section:last-child div{
     align-self: flex-end;
     background-color: var(--bg-black);
     padding: 5px;
@@ -283,39 +293,109 @@ article{
     justify-content: center;
     align-items: center;
 }
-#fiveHeadphonesLogos .data{
-    height: 240px;
-    width: 170px;
-    background-image: url("./Photos/black.png");
-    background-repeat: no-repeat;
-    background-size: 100px 140px;
-    background-position: 20px -60px ;
-}
-#fiveHeadphonesLogos section{
+
+#fiveHeadphonesLogos .headphoneImage{
     background-color: var(--bg-grey);
     height: 160px;
     width: 170px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     border-radius: 12px;
-    padding-bottom: 10px;
 }
-#fiveHeadphonesLogos section:first-child,
-#fiveHeadphonesLogos section:nth-child(4){
-    column-gap: 68px;
+.headphoneImage section:first-child img{
+    width: 90px;
+    position: relative;
+    bottom: 40px;
 }
-#fiveHeadphonesLogos section:nth-child(5){
-    column-gap: 16px;
+#fiveHeadphonesLogos .headphoneImage section:last-child{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 30px;
 }
 
-#fiveHeadphonesLogos section:nth-child(2){
+.headphoneImage section:last-child{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.headphoneImage1 section:last-child,
+.headphoneImage4 section:last-child{
+    column-gap: 68px;
+}
+
+
+.headphoneImage2 section:last-child{
     column-gap: 38px;
 }
-#fiveHeadphonesLogos section:nth-child(3){
-    column-gap: 32px;
+
+.headphoneImage3 section:last-child{
+    column-gap: 28px;
 }
-#fiveHeadphonesLogos section:first-child{
-    
+.headphoneImage5 section:last-child{
+    column-gap: 12px;
 }
+
+/* FOOTER */
+footer{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    column-gap: 170px;
+    justify-content: center;
+    align-items: center;
+}
+footer div:nth-child(3) h2,
+footer div:nth-child(4) h2
+{
+    font-size: 26px;
+    font-weight: 400;
+}
+footer div:nth-child(3) p,
+footer div:nth-child(4) p
+{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+footer div:nth-child(3),
+footer div:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+footer div:nth-child(5) #emailBtn{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    column-gap: 160px;
+    width: 420px;
+    height: 80px;
+    background-color: var(--bg-grey);
+    border-radius: 8px;
+    padding-left: 12px;
+}
+footer div:nth-child(5) #emailBtn section{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    background-color: var(--bg-black);
+    padding: 18px;
+    border-radius: 6px;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    align-items: center;
+}
+footer div:nth-child(2) img{
+   position: relative;
+   bottom: 80px;
+}
+
 

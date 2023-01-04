@@ -464,7 +464,7 @@ footer{
      url("./Assets/Photos/Rectangle\ 606.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size:1200px 800px ;
+    background-size:cover ;
 }
 .lastPage{
     background-color: var(--bg-black);
