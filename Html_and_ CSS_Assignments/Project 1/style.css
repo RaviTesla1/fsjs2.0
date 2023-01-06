@@ -15,7 +15,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   /* overflow: hidden; */
-  background-color: #3a2b5f;
+  background-color: var(--white);
 }
 .container{
   background-color: var(--white);
