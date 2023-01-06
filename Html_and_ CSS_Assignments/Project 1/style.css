@@ -11,13 +11,25 @@
   --white: #e5e2eb;
 }
 body {
-  background-color: #ece7e7;
+ 
+  max-width: 1440px;
+  margin: 0 auto;
+  /* overflow: hidden; */
+  background-color: #3a2b5f;
+}
+.container{
+  background-color: var(--white);
 }
 .list {
   list-style: none;
   display: flex;
   flex-direction: row;
   column-gap: 30px;
+}
+.grow-list{
+  display: flex;
+  flex-direction: row;
+  column-gap: 300px;
 }
 .navbar-container div img {
   width: 140px;
@@ -31,9 +43,11 @@ body {
 
   font-size: 18px;
   font-weight: 300;
+  
 }
+
 .heading-text {
-  font-size: 75px;
+  font-size: 60px;
   font-weight: 600;
   color: var(--darkPurple);
 }
@@ -42,8 +56,8 @@ body {
 }
 .list {
   color: var(--lightGrey);
-  position: relative;
-  right: 260px;
+  /* position: relative; */
+  /* right: 128px; */
   font-size: 20px;
   font-weight: 400;
 }
@@ -57,107 +71,110 @@ body {
 }
 .navbar-container {
   height: 180px;
-  width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  column-gap: 160px;
+  justify-content: center;
 }
 .navbar-container i{
     display: none;
   }
 .banner-container {
-  height: 70vh;
-  width: 100vw;
   display: flex;
   flex-direction: row;
-  column-gap: 80px;
   justify-content: center;
   align-items: center;
-  /* padding-left: 50px; */
   box-sizing: border-box;
+  padding-bottom: 30px;
+  column-gap: 140px;
 }
-.banner-container div:first-child {
+.banner-container .leftSection{
   display: flex;
   flex-direction: column;
   row-gap: 50px;
-}
-.heading-text {
-  width: 476px;
-}
-.description {
-  width: 500px;
+ width: 30%;
 }
 img[alt="illustration"] {
+  height: 510px; 
   position: relative;
-  left: 178px;
-  height: 600px;
+  left: 100px;
 }
 
-/* MEDIA QUERY */
-@media (max-width: 768px) {
-  body {
-    /* background-color: rgb(235, 235, 137); */
+ 
+  
+  /* MEDIA QUERY */
+  @media (max-width: 768px) {
+    body {
+      /* background-color: rgb(235, 235, 137); */
+    }
+    .list {
+      display: none;
+    }
+    .button-group {
+      display: none;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .banner-container {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 400px;
+      width: 500px;
+  
+      justify-content: center;
+      align-items: center;
+      row-gap: 12px;
+      box-sizing: border-box;
+    }
+    img[alt="illustration"] {
+      position: static;
+      /* left: 178px; */
+      height: 200px;
+      width: 350px;
+      overflow: hidden;
+    }
+    .heading-text {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .heading-text {
+      width: 383px;
+    }
+    .description {
+      width: 376px;
+    }
+    .description {
+      font-size: 14px;
+    }
+    img[alt="brand-logo"] {
+      width: 105px;
+      height: 31px;
+    }
+    .navbar-container {
+      height: 140px;
+      width: 600px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      /* align-items: center; */
+    }
+    .navbar-container i{
+      display: inline-block;
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .banner-container div:first-child {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      justify-content: center;
+      align-items: center
+    }
+  
   }
-  .list {
-    display: none;
-  }
-  .button-group {
-    display: none;
-  }
-  .banner-container {
-    display: flex;
-    flex-direction: column-reverse;
-    height: 400px;
-    width: 500px;
-
-    justify-content: center;
-    align-items: center;
-    row-gap: 12px;
-    box-sizing: border-box;
-  }
-  img[alt="illustration"] {
-    position: static;
-    /* left: 178px; */
-    height: 200px;
-    width: 350px;
-  }
-  .heading-text {
-    font-size: 20px;
-    font-weight: 600;
-  }
-  .heading-text {
-    width: 383px;
-  }
-  .description {
-    width: 376px;
-  }
-  .description {
-    font-size: 14px;
-  }
-  img[alt="brand-logo"] {
-    width: 105px;
-    height: 31px;
-  }
-  .navbar-container {
-    height: 140px;
-    width: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /* align-items: center; */
-  }
-  .navbar-container i{
-    display: inline-block;
-    font-size: 30px;
-    font-weight: 600;
-  }
-  .banner-container div:first-child {
-    display: flex;
-    flex-direction: column;
-    row-gap: 24px;
-    justify-content: center;
-    align-items: center
-  }
-
-}
+  
