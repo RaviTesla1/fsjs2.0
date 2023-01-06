@@ -15,7 +15,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   /* overflow: hidden; */
-  background-color: var(--white);
+  background-color: var(--darkPurple);
 }
 .container{
   background-color: var(--white);
@@ -87,7 +87,7 @@ body {
   align-items: center;
   box-sizing: border-box;
   padding-bottom: 30px;
-  column-gap: 140px;
+  column-gap: 110px;
 }
 .banner-container .leftSection{
   display: flex;
@@ -98,7 +98,7 @@ body {
 img[alt="illustration"] {
   height: 510px; 
   position: relative;
-  left: 100px;
+  left: 120px;
 }
 
  
