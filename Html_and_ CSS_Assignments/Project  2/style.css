@@ -9,14 +9,8 @@
     --btn_bg: rgb(186, 12, 197);
 }
 body{
-    background-image: url("./Assets/bg.png");
-    background-size: 100vw 100vh;
-     background-repeat: no-repeat;
-     /* filter: opacity(25%);
-     z-index: -1; */
-    /* min-width: 475px;
-    min-height: 475px; */
-
+    max-width: 1440px;
+   margin: 0 auto;
 }
 .logo{
     width: 100px;
@@ -58,8 +52,9 @@ ul{
 .navbar{
     display: flex;
      flex-direction: row;
-     box-sizing: border-box;
+     justify-content: center;
      align-items: center;
+     box-sizing: border-box;
      column-gap: 40px;
      height: 80px;
      background-color: rgb(21, 21, 21);
@@ -67,13 +62,20 @@ ul{
 }
 .button-small{
     position: relative;
-    left: 340px;
+    left: 190px;
 }
 .container{
-    height: 100vh;
+    background-image: url("./Assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: 0px 0px;
+
+    
     display: flex;
     flex-direction: column;
     row-gap: 200px;
+
+    padding-bottom: 284px;
 }
 .hero{
     height: 85%;
@@ -89,9 +91,9 @@ ul{
     font-size: 40px;
 }
 
-@media only screen and (min-width: 370px) and (max-width:480px){
+@media only screen and (min-width: 370px) and (max-width:425px){
     .logo{
-        width: 100px;
+        width: 50px;
     }
     .line{
       visibility : hidden;
@@ -103,6 +105,56 @@ ul{
         display: block;
         visibility: visible;
         color: aqua;
+        position: absolute;
+        right: 70px;
+        top: 20px;
+    }
+    .container{
+        background-image: url("./Assets/bg.png");
+        background-repeat: no-repeat;
+        background-size: cover ;
+        background-position: 0px -60px;
+    
+        
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        justify-content: center;
+        align-items: center;
+    
+        padding-bottom: 28px;
+    }
+    /*  navbar */
+    .navbar{
+        color: #ffffff;
+    }
+    .logo{
+        width: 50px;
+        z-index: 3;
+    }
+    .hero-heading{
+        font-size: 34px;
+        font-weight: 400;
+        width: 320px;
+    }
+    .hero-description{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .button-small{
+        position: absolute;
+        display: none;
+    }
+    .navbar{
+        display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         box-sizing: border-box;
+         column-gap: 0px;
+         height: 80px;
+         background-color: rgb(21, 21, 21);
+         padding: 0   100px;
     }
 
 }
