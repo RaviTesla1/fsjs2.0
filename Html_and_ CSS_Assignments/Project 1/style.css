@@ -87,18 +87,23 @@ body {
   align-items: center;
   box-sizing: border-box;
   padding-bottom: 30px;
-  column-gap: 110px;
+  column-gap: 80px;
+  /* position: relative; */
 }
 .banner-container .leftSection{
   display: flex;
   flex-direction: column;
   row-gap: 50px;
- width: 30%;
+  width: 500px;
 }
 img[alt="illustration"] {
-  height: 510px; 
-  position: relative;
-  left: 120px;
+  /* height: 510px; 
+  overflow: hidden;
+  position: absolute; */
+  width: 580px;
+  /* position: absolute;
+  right: 0px;
+  top: 200px; */
 }
 
  
