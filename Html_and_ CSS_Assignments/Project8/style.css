@@ -27,7 +27,7 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 170px;
+    column-gap: 120px;
 }
 nav ul{
     color: var(--textGrey);
@@ -68,7 +68,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    column-gap: 50px;
+    column-gap: 120px;
 }
 .textWhite{
     font-size: 70px;
@@ -285,12 +285,12 @@ header{
     row-gap: 100px;
 }
 .priceCards{
-    height: 140vh;
-    width: 26%;
+    height: 110vh;
+    width: 380px;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 20px;
     padding: 50px;
     box-sizing: border-box;
     transition: all 1s ease-in-out;
@@ -311,7 +311,7 @@ header{
     background-color: var(--textWhite);
 }
 .pricingSection{
-   height: 100vh;
+   height: 134vh;
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -324,7 +324,7 @@ header{
     column-gap: 16px;
 }
 .priceCards h2{
-    font-size: 30px;
+    font-size: 23px;
     font-weight: 700;
 }
 .priceCards h1{
@@ -332,7 +332,7 @@ header{
     font-weight: 600;
 }
 .priceCards h1 span{
-    font-size: 30px!important;
+    font-size: 24px!important;
     font-weight: 600; 
     color: var(--textGrey)!important;
 }
@@ -341,16 +341,18 @@ header{
     font-weight: 700;
 }
 .priceCards section h3{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 .btnPadding{
-    padding:22px 140px;
+    width: 280px;
+    height: 64px;
 }
 .standardBtn{
     background-color: va(--textWhite);
     color: var(--skyBlue);
-    padding:22px 140px;
+    width: 280px;
+    height: 64px;
     border: none;
     font-size: 20px;
     font-weight: 600;
