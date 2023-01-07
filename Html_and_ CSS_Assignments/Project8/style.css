@@ -282,6 +282,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .priceCards{
     height: 110vh;
@@ -469,6 +470,7 @@ footer{
     justify-content: center;
     align-items: center;
     row-gap: 60px;
+    overflow: hidden;
 }
 .greyBtn{
     background-color: var(--bgLightGrey);
