@@ -7,9 +7,8 @@
 }
 body{
     box-sizing: border-box;
-    /* max-width: 1440px; */
-    font-family: "Montserrat",sans-serif;
-}
+    max-width: 1440px;
+    font-family: "Montserrat",sans-serif;}
 :root{
     --bgBlack : #111010;
     --skyBlue : #0C8BFD;
@@ -22,13 +21,13 @@ body{
 }
 /* NAVBAR */
 nav{
-    height: 10vh;
+    height: 15vh;
     background-color: var(--bgBlack);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 200px;
+    column-gap: 170px;
 }
 nav ul{
     color: var(--textGrey);
@@ -64,7 +63,7 @@ nav ul li:hover{
 /* HEADER */
 header{
     background-color: var(--bgBlack);
-    height: 90vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,8 +124,9 @@ header{
     align-items: center;
     column-gap: 160px;
 }
-article{
-    height: 100vh;
+/* ARTICLE   1111 */
+.firstArticle{
+    height: 140vh;
 }
 .textBlack{
     font-size: 60px;
@@ -136,7 +136,7 @@ article{
   color: var(--textDarkGrey);
 }
 .cards{
-    width: 420px;
+    width: 410px;
     height: 400px;
     border: 1px solid var(--textDarkGrey);
     display: flex;
@@ -162,7 +162,7 @@ article{
     
     display: flex;
     flex-direction: row;
-    column-gap: 50px;
+    column-gap: 40px;
     justify-content: center;
     align-items: center;
 }
@@ -203,7 +203,7 @@ article{
 }
 .services{
     width: 35%;
-    height: 90vh;
+    height: 120vh;
     background-color: var(--bgBlack);
     color: #faf9f9;
     border-radius: 5%;
@@ -269,14 +269,23 @@ article{
     padding-left: 140px;
 }
 .secondArticle{
-    padding-bottom: 440px;
+    height: 190vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    justify-content: center;
 }
 /* PRICING SECTION */
-figure{
+#pricingSection{
     background-color: var(--bgBlack);
+    height: 220vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 100px;
 }
 .priceCards{
-    height: 95%;
+    height: 140vh;
     width: 26%;
     border-radius: 40px;
     display: flex;
@@ -369,10 +378,14 @@ figure{
 
 /* REVIEW  SECTION */
 summary{
-    height: 110vh;
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
 }
 .summaryCards p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 36px;
 }
@@ -393,7 +406,7 @@ summary{
     padding: 14px 40px 14px 40px;
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 34px;
     transition: all 1s ease-in-out;
 }
 .summaryCards:hover{
@@ -435,21 +448,21 @@ summary{
     width: 482px;
 }
 .summaryUpper p{
-    width: 680px;
+    width: 580px;
 }
 .summaryUpper{
-    height: 24%;
+    /* height: 24%; */
     display: flex;
     flex-direction: row;
     justify-content: center;
-    column-gap: 300px;
+    column-gap: 160px;
     position: relative;
     top: 120px;
 }
 /* FOOTER */
 footer{
     background-color: var(--bgBlack);
-    height: 150vh;
+    height: 180vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -461,10 +474,13 @@ footer{
     color: #78787d;
     font-size: 20px;
     font-weight: 500;
-    padding: 22px 190px 22px 40px;
+    height: 60px;
+    width: 300px;
     border-radius: 40px;
     border: none;
     transition: all 1s ease-in-out;
+    text-align: left;
+    padding-left: 20px;
     
 }
 .btnContainer .greyBtn:hover{
@@ -488,7 +504,8 @@ footer{
 .skyBlueBtn{
     background-color: var(--skyBlue);
     color: var(--textWhite);
-    padding: 22px 46px;
+    height: 60px;
+    width: 160px;
     border: none;
     font-size: 20px;
     font-weight: 600;
@@ -528,7 +545,7 @@ footer{
     color: #c9b6b6;
 }
 .footerHeading{
-    font-size: 60px;
+    font-size: 44px;
     font-weight: 600;
     color: var(--textWhite);
     text-align: center;
