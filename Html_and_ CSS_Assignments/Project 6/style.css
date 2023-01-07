@@ -50,6 +50,11 @@ nav ul li button{
     border-radius: 10px;
     font-size: 18px;
     padding: 10px 14px;
+    transition: all 1s ease-in-out;
+}
+nav ul li button:hover{
+    background-color: goldenrod;
+    color: #2B2923;
 }
 main{
     height: 80vh;
@@ -61,7 +66,7 @@ main{
 .left{
     height:30% ;
     display: flex;
-    column-gap: 250px;
+    column-gap: 320px;
     justify-content: center;
     align-items: center;
    
@@ -79,11 +84,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative;
-    left: 100px; */
+    position: relative;
+    left: 0px;
+    right: 0px;
  
 }
 .right img{
     height: 440px;
-    width: 80vw;
+    width: 86vw;
 }
