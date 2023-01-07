@@ -282,7 +282,6 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 100px;
 }
 .priceCards{
     height: 110vh;
