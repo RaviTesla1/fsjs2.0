@@ -97,13 +97,10 @@ body {
   width: 500px;
 }
 img[alt="illustration"] {
-  /* height: 510px; 
-  overflow: hidden;
-  position: absolute; */
-  width: 580px;
-  /* position: absolute;
-  right: 0px;
-  top: 200px; */
+  width: 620px;
+ position: relative;
+ left: 116px;
+ overflow-x: hidden;
 }
 
  
