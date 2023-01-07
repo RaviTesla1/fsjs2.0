@@ -28,7 +28,7 @@ nav ul li{
     font-weight: 600;
 }
 nav ul li:first-child{
-    color: green;
+    color: #41D399;
 }
 
 /* Hero Section */
@@ -85,7 +85,7 @@ main section {
 
 .leftsection button{
     color: white;
-    background-color: green;
+    background-color: #2a9b6e;
     padding: 15px 40px;
     border: none;
     border-radius: 40px;
@@ -98,18 +98,18 @@ main section {
     right: 0;
 }
 .greenbox{
-    width: 35%;
-    bottom: 30px;
+    width: 32%;
+    bottom: 10px;
 }
 .yellowbox{
-    width: 30%;
-    bottom: 50px;
+    width: 28%;
+    bottom: 30px;
 }
 
 
 .doctor{
     position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 90%;
+    right: 40px;
+    bottom: -20px;
+    height: 95%;
 }
