@@ -5,10 +5,6 @@
     padding: 0;
     outline: 0;
 }
-html {
-  font-size: 100%;
-} /*16px*/
-
 :root {
   --color-primary: #f4694c;
   --bg-black: #000308;
@@ -17,21 +13,16 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   background: rgb(237, 240, 239);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  /* line-height: 1.75; */
   color: #000000;
-
+  max-width: 1440px;
   margin: 0 auto;
 }
 /* HEADER */
 nav ul{
-    font-size: 18px;
-    font-weight: 400;
     display: flex;
     flex-direction: row;
     column-gap: 50px;
@@ -48,9 +39,10 @@ nav ul li:hover{
 .orangeBtn{
     color: var(--color-white);
     background-color: var(--color-primary);
-    padding: 18px 34px;
-    font-size: 20px;
-    font-weight: 600;
+    height: 54px;
+    width: 128px;
+    font-size: 18px;
+    font-weight: 300;
     border: none;
     transition: all 1s ease-in-out;
 }
@@ -62,16 +54,28 @@ nav ul li:hover{
 .navbtns button:first-child{
     color: var(--color-white);
     background-color: transparent;
-    font-size: 20px;
-    font-weight: 600;
     border: none;
     transition: all 1s ease-in-out;
-    padding: 18px 34px;
+    height: 54px;
+    width: 128px;
+    font-size: 18px;
+    font-weight: 300;
 }
 .navbtns button:first-child:hover{
     color: var(--color-primary);
     background-color: var(--color-white);
     border: 1px solid var(--color-primary);
+}
+.navbtns{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+.navSecondChild{
+    display: flex;
+    flex-direction: row;
+    column-gap: 160px;
+    align-items: center;
 }
 nav{
     height: 15vh;
@@ -79,23 +83,18 @@ nav{
     flex-direction: row;
     column-gap: 160px;
     align-items: center;
-    margin-left: 112px;
-}
-.navbtns{
-    display: flex;
-    flex-direction: row;
-    column-gap: 30px;
-    position: relative;
-    left: 140px;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 300;
 }
 /* HEADER */
 header{
-    height: 90vh;
+    /* height: 90vh; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 10%;
+    column-gap: 15%;
 }
 .left{
     width: 40%;
@@ -129,6 +128,9 @@ header{
     font-weight: 400;
     color: var(--color-white);
     margin-bottom: 44px;
+}
+.header button:first-child{
+    width: 160px!important;
 }
 .header button:last-child{
     color: var(--color-white);
@@ -170,21 +172,30 @@ header{
     left: 100px;
 }
 .navHeaderWrapper{
+    height: 100%;
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),
      rgba(0, 0, 0, 0.7)),
      url("./Assets/Photos/futuristic-bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    background-position: center;
     filter: grayscale(10%);
     filter: contrast(-10%);
+    padding-bottom: 6%;
+    background-attachment: fixed;
 }
+
+
+
 /* FOUR CARDS */
 figure{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    row-gap: 90px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .blackBig{
     font-size: 58px;
@@ -192,8 +203,8 @@ figure{
 }
 
 .gameCards{
-    width: 360px;
-    height: 500px;
+    width: 284px;
+    height: 400px;
     transition: all 1s ease-in-out;
 }
 .gameCards:hover{
@@ -203,27 +214,27 @@ figure{
     background-image: url("./Assets/Photos/image\ 2.png");
     background-repeat: no-repeat;
     background-size: cover; 
-    background-position: -350px 0px;
+    background-position: -300px 0px;
 }
 .gameCard2{
     background-image: url("./Assets/Photos/image\ 4.png");
     background-repeat: no-repeat;
     background-size: cover; 
-    background-position: -270px 0px;
+    background-position: -220px 0px;
      
 }
 .gameCard3{
     background-image: url("./Assets/Photos/image\ 3.png");
     background-repeat: no-repeat;
     background-size: cover; 
-    background-position: -210px 0px;
+    background-position: -170px 0px;
      
 }
 .gameCard4{
     background-image: url("./Assets/Photos/Rectangle\ 56.png");
     background-repeat: no-repeat;
     background-size: cover; 
-    background-position: -270px 0px;
+    background-position: -220px 0px;
     
 }
 .cardWrapper{
@@ -234,14 +245,14 @@ figure{
     align-items: center;
 }
 .displayRow{
-    height: 134px;
+    height: 124px;
     background: rgba(27, 27, 28, 0.7);
     color: var(--color-white);
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: px;
     position: relative;
-    top: 365px;
+    top: 275px;
 }
 .displayCol{
     height: 280px;
@@ -252,11 +263,11 @@ figure{
     
 }
 .displayCol h1{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
 }
 .displayCol p{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     margin: 12px 0px;
 }
@@ -269,7 +280,7 @@ figure{
     column-gap: 12px;
 }
 .fiveStars  section img{
-    width: 20px;
+    width: 12px;
 }
 .displayRow section button{
     font-size: 16px;
@@ -277,20 +288,49 @@ figure{
 }
 .gameCards section button{
   position: relative;
-  top: 24px;
+  top: 42px;
+  color: var(--color-white);
+    background-color: var(--color-primary);
+    height: 42px;
+    width: 108px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    transition: all 1s ease-in-out;
+}
+
+.gameCards section button:hover{
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+}
+.gameCard1 section button{
+    position: relative;
+    left: 42px;
+}
+.gameCard2 section button{
+    position: relative;
+    left: 10px;
+}
+.gameCard3 section button{
+    position: relative;
+    left: 30px;
+}
+.gameCard4 section button{
+    position: relative;
+    left: 10px;
 }
 /* FOUR CARDS DISPLAY ROW ENDDDD */
 
-
 /* ARTICLE WITH ONE IMAGE */
 .oneImageText{
-    height: 100vh;
     display: flex;
     flex-direction: row;
-    column-gap: 360px;
+    column-gap: 180px;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    margin: 80px 0px 80px 0px;
 }
 .articleTwoBtns button:last-child{
     color: var(--color-primary);
@@ -313,27 +353,33 @@ figure{
     margin-top: 30px;
 }
 .oneImageText div{
-    width: 500px;
+    max-width: 500px;
+    min-width: 360px;
 }
 .articleLeft img{
-    width: 660px;
-    height: 580px;
+    display: block;
+    max-width: 100%;
 }
 .greyText{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: var(--color-grey);
 }
+.articleRight h1{
+    font-size: 42px;
+    font-weight: 500;
+}
+
 /* FOUR  CARDS    GRIDDD*/
 /* WOLVERINE SNAKE  SPIDERMAN  MUMMY */
   
 .GameCardsUpper{
-    height: 30vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     column-gap: 23%;
+    margin-bottom: 80px;
 }
 .GameCardsUpper h1{
     width: 50%;
@@ -363,8 +409,8 @@ figure{
       background-color: var(--color-primary);
     }
 .fourGameCards section img{
-    width: 320px;
-    height: 420px;
+    width: 310px;
+    height: 384px;
 }
 .cardRight{
     width: 320px;
@@ -372,12 +418,10 @@ figure{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    position: relative;
-    top: 50px;
 }
  .cardRight h1{
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 26px;
+    font-weight: 400;
 }
 
 .cardRight h3{
@@ -398,28 +442,45 @@ figure{
     transform: scale(1.2);
 }
 .fourGameCardsParent{
-    height: 125vh;
     display: grid;
-    grid-template-columns: 680px 680px;
+    grid-template-columns: 580px 580px;
     column-gap: 80px;
     row-gap: 60px;
     justify-content: center;
 
 }
+.GameCards{
+    margin: 80px 0px 80px 0px;
+}
+
+
+
+
+
+
+
 /* TWO LAST PAGES */
 footer{
     background-color: var(--bg-black);
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+.seconlast{
+    margin-bottom: 180px;
 }
 .seconlast h1{
-    height: 40vh;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 80px 0px 80px 0px;
+}
+.leftFooter img{
+    display: inline-block;
+    max-width: 94%;
 }
 .divWrapperRow{
-    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -427,8 +488,12 @@ footer{
 
     background-image: url("./Assets/Icons/GAMES\ OF\ THE\ WORLD.svg");
     background-repeat: no-repeat;
-    background-size: 1100px;
-    background-position:500px 100px ;
+    background-size: contain;
+    background-position:430px 100px ;
+}
+.twoImagesRow section img{
+    display: inline-block;
+    max-width: 370px;
 }
 .twoImagesRow{
     display: flex;
@@ -453,7 +518,6 @@ footer{
 /* LAST PAGE */
 
 .lastPageUpper{
-    height: 50%;
     display: flex;
     flex-direction: column;
     row-gap: 50px;
@@ -464,11 +528,11 @@ footer{
      url("./Assets/Photos/Rectangle\ 606.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover ;
+    background-size:cover;
+    padding: 100px 0px 100px 0px;
 }
 .lastPage{
     background-color: var(--bg-black);
-    height: 110vh;
 }
 .footerRight ul li{
     font-size: 20px;
@@ -505,13 +569,20 @@ footer{
     column-gap: 60px;
 }
 .lastPageLower{
-    height: 50%;
     display: flex;
     flex-direction: row;
     column-gap: 80px;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
+@media (min-width:377px) and (max-width:480px){
+    nav{
+    display: none;
+    }
+}
+
+
 
 
 
