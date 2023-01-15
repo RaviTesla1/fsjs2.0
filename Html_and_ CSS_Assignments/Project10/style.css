@@ -22,8 +22,15 @@ body{
     background-image: url("./Photos/Untitled\ design.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #555;
+    background-blend-mode: multiply;
+    background-position: -80px -50px;
+    overflow: hidden;
 }
 /*  NAV */
+nav section img{
+    width: 120px;
+}
 nav{
     height: 15vh;
     padding: ;
@@ -31,16 +38,16 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    column-gap: 400px;
+    column-gap: 240px;
 }
 nav ul{
     display: flex;
     flex-direction: row;
-    column-gap: 100px;
+    column-gap: 60px;
 }
 nav ul li{
     list-style: none;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     color: var(--myWhite);
     transition: all 1s ease-in-out;
@@ -53,13 +60,13 @@ nav ul li:hover{
 hr{
     position: relative;
     top: 30px;
-    margin: 0 160px;
+    margin: 0 100px;
 }
 
 
 /* MAIN */
 main{
-    height: 95vh;
+    padding: 100px 0 100px 0;
     color: var(--myWhite);
     display: flex;
     flex-direction: column;
@@ -83,6 +90,7 @@ main section button{
         border: none;
         border-radius: 34px;
 }
+
 /* FIVE  LOGOS */
 .fiveLogosParent{
     display: flex;
@@ -95,9 +103,9 @@ main section button{
     border-radius: 30px;
     border: 1px solid rgb(223, 206, 206);
     position: absolute;
+    padding: 50px 0px;
 }
 .fiveLogosWrapper ul{
-    height: 26vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -112,6 +120,7 @@ main section button{
     font-family: "sans-serif";
     list-style: none;
 }
+
 
 /* 9  HOUSES */
 .pricingCol h2{
@@ -144,7 +153,7 @@ main section button{
     align-items: center;
     column-gap: 20px;
     position: relative;
-    top: 400px;
+    top: 320px;
     left: 60px;
 }
 .pricingCol{
@@ -153,8 +162,8 @@ main section button{
     row-gap: 16px;
 }
 .houses{
-    height: 470px;
-    width: 450px;
+    height: 370px;
+    width: 350px;
     border-radius: 24px;
 }
 .house1{
@@ -221,15 +230,16 @@ main section button{
     margin-top: 80px;
 }
 .lowerFigure{
-    height: 256vh;
+    margin-bottom:100px ;
     display: grid;
-    grid-template-columns: 470px 470px 470px;
+    grid-template-columns: 350px 350px 350px;
+    column-gap: 24px;
     grid-template-rows: 730px 580px 600px;
     place-content: center;
 }
 .upperFigure{
-    height: 30vh;
-    display: flex;
+    margin-top: 100px;
+    margin-bottom: 300px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -241,6 +251,9 @@ main section button{
     position: relative;
     top: 100px;
 }
+
+
+
 /* TWO FIGURES WTH TEXT */
 .greySmall{
     font-size: 20px;
@@ -260,13 +273,13 @@ main section button{
     border-radius: 34px; 
 }
 .leftSectionImage div img{
-    width: 660px;
-    height: 660px;
+    width: 515px;
+    height: 480px;
     border-radius: 40px;
 }
 .rightSectionImage div img{
-    width: 660px;
-    height: 660px;
+    width: 515px;
+    height: 480px;
     border-radius: 40px;
 }
 .articleSecond{
@@ -283,7 +296,7 @@ main section button{
 
 }
 .articleFirst{
-    height: 110vh;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -292,13 +305,15 @@ main section button{
     background-image: url("./Icons/featureImageBg1.svg");
     background-repeat: no-repeat;
     background-size: 922px 800px;
-    background-position: 0px 180px;
+    /* background-position: 0px 180px; */
 }
 .rightSectionText{
     display: flex;
     flex-direction: column;
     row-gap: 40px;
 }
+
+
 /* SUMARRY */
 summary{
     height: 90vh;
@@ -393,4 +408,7 @@ footer ul li:first-child{
     font-weight: 400!important;
     color: #131212!important;
 }
+
+
+
 
