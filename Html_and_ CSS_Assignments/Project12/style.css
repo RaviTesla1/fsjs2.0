@@ -51,12 +51,12 @@ nav div:nth-child(2){
   column-gap: 70px;
 }
 nav{
-  height: 20vh;
+  padding-top: 30px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   column-gap: 160px;
-  padding-top: 20px;
 }
 /* HERO  SECTION */
 .leftSection section > p{
@@ -134,17 +134,20 @@ main{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100vh;
+  padding-bottom: 100px;
 }
 
 /* ARTICLE WHY  QUBLY*/
 #article{
-  height: 100vh;
+  margin: 150px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 70px;
+  text-align: center;
 }
+
 .articleBottom{
   display: flex;
   flex-direction: row;
@@ -179,14 +182,7 @@ main{
   font-size: 24px;
   font-weight: 500;
 }
-#article{
-  display: flex;
-  flex-direction: column;
-  row-gap: 70px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
+
 .articleTop{
   display: flex;
   flex-direction: column;
@@ -212,7 +208,7 @@ main{
 }
 /* FIGURE  (bestStack + pipeline) */
 figure{
-  height: 100vh;
+  margin-bottom: 120px;
   display: flex;
   flex-direction: row;
   column-gap: 60px;
@@ -285,7 +281,8 @@ figure section{
   column-gap: 100px;
 }
 .cto{
-  height: 100vh;
+ padding: 100px 0px;
+ margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   row-gap: 40px;
@@ -305,7 +302,7 @@ figure section{
 }
 /* FORMS */
 .formWrapper{
-  height: 130vh;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
