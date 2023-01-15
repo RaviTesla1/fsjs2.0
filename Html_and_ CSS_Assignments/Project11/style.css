@@ -30,7 +30,7 @@ nav{
     height: 15vh;
     display: flex;
     flex-direction: row;
-    column-gap: 70px;
+    column-gap: 90px;
     align-items: center;
 }
 nav ul{
@@ -101,3 +101,303 @@ main{
     position: relative;
     left: 40px;
 }
+/* FOUR  LOGOS */
+#fourLogos{
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SPECIFICATION */
+.upperSection img{
+    width: 270px;
+}
+.specs{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 90px;
+    justify-content: center;
+    align-items: center;
+}
+.lowerSection .leftSpecs{
+    width: 500px;
+}
+.rightSpecs img{
+    width: 400px;
+}
+.leftSpecs div h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+.leftSpecs div p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.leftSpecs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 44px;
+    color: var(--color-white);
+}
+.lowerSection{
+    display: flex;
+    flex-direction: row;
+}
+.lowerSection .leftSpecs div:first-child,
+.lowerSection .leftSpecs div:last-child{
+    position: relative;
+    left: 40px;
+}
+
+/* CASE */
+.case .caseUpper img{
+    width: 240px;
+}
+.caseLower .rightSection p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.caseLower .rightSection div{
+    width: 180px;
+    height: 58px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-grey);
+    color: var(--color-white);
+    border: none;
+    border-radius: 12px;
+}
+.caseLower .rightSection h4{
+    font-size: 18px;
+    font-weight: 300;
+}
+.case .caseLower{
+    display: flex;
+    flex-direction: row;
+    column-gap: 120px;
+    align-items: center;
+}
+.case{
+    margin-bottom: 100px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.caseLower .rightSection{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+
+/* ARTICLE */
+.articleLeft h1{
+    font-size: 22px;
+    font-weight: 400;
+}
+.articleLeft p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.articleLeft #articleBtns{
+    width: 180px;
+    height: 58px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    justify-content: center;
+    align-items: center;
+    background-color: var( --bg-black);
+    color: var(--color-white);
+    border: none;
+    border-radius: 12px;
+
+}
+.articleRight img{
+    width: 360px;
+}
+article{
+    padding: 60px 60px 60px 80px;
+    background-color: var(--bg-grey);
+    color: var(--color-white);
+    margin: 0  260px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 140px;
+    justify-content: center;
+    align-items: center;
+}
+.articleLeft{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+
+/* FIVE  HEADPHONES */
+#fiveHeadphones{
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 120px;
+    color: var(--color-white);
+}
+#headingLogos{
+    /* height:20% ; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#headingLogos img{
+    width: 400px;
+}
+#fiveHeadphonesLogos{
+    /* height: 80%; */
+    display: grid;
+    grid-template-columns: 170px 170px 170px;
+    column-gap: 80px;
+    row-gap: 140px;
+    justify-content: center;
+}
+#fiveHeadphonesLogos section p{
+    font-size: 17px;
+    font-weight: 500;
+    align-self: flex-end;
+}
+
+
+#fiveHeadphonesLogos div  section:last-child div{
+    align-self: flex-end;
+    background-color: var(--bg-black);
+    padding: 5px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#fiveHeadphonesLogos .headphoneImage{
+    background-color: var(--bg-grey);
+    height: 160px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+.headphoneImage section:first-child img{
+    width: 90px;
+    position: relative;
+    bottom: 40px;
+}
+#fiveHeadphonesLogos .headphoneImage section:last-child{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 30px;
+}
+
+.headphoneImage section:last-child{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.headphoneImage1 section:last-child,
+.headphoneImage4 section:last-child{
+    column-gap: 68px;
+}
+
+
+.headphoneImage2 section:last-child{
+    column-gap: 38px;
+}
+
+.headphoneImage3 section:last-child{
+    column-gap: 28px;
+}
+.headphoneImage5 section:last-child{
+    column-gap: 12px;
+}
+
+
+/* FOOTER */
+footer{
+   margin-bottom: 100px;
+   color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    column-gap: 120px;
+    justify-content: center;
+    align-items: center;
+}
+footer div:nth-child(3) h2,
+footer div:nth-child(4) h2
+{
+    font-size: 20px;
+    font-weight: 400;
+}
+footer div:nth-child(3) p,
+footer div:nth-child(4) p
+{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer div:nth-child(3),
+footer div:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+footer div:nth-child(5) #emailBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 120px;
+    width: 322px;
+    height: 60px;
+    background-color: var(--bg-grey);
+    border-radius: 8px;
+    padding-left: 12px;
+}
+footer div:nth-child(5) #emailBtn section{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    background-color: var(--bg-black);
+    padding: 10px 14px;
+    border-radius: 6px;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    align-items: center;
+    margin-top: 20px;
+}
+/* footer div:nth-child(2) img{
+   position: relative;
+   bottom: 80px;
+} */
+
+
+
+
