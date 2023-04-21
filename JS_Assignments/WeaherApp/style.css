@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:   linear-gradient(45deg,
+    rgba(29, 27, 27, 0.75),
+    rgba(1, 1, 1, 0.75)),
+     url(./Images/pexels-konevi-3789871.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-position: center;
+    object-fit: cover;
+}
+/* linear-gradient(45deg,
+    rgba(245,70,66, 0.75),
+    rgba(8,83,156, 0.75)), */
+.container{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 50px;
+    border: 1px solid greenyellow;
+    color: aliceblue!important;
+    back
+}
+#countryDetails{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.humidityDetails{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+input[type="text" i]{
+    padding: 10px;
+    font-size: 18px;
+}
+button
+ {
+    padding: 10px;
+    font-size: 18px;
+    position: relative;
+    right: 40px;
+}

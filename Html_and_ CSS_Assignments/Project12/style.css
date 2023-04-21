@@ -29,6 +29,7 @@ nav div:first-child img{
 nav div:nth-child(2) ul{
   display: flex;
   flex-direction: row;
+  align-items: center;
   column-gap: 70px;
   list-style: none;
 }

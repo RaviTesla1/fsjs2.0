@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>##Weather app</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="container">
+
+    <!-- HEADING -->
+    <h1>Weather app</h1>
+
+    <!-- FORM -->
+    <!-- <form    onsubmit="getData(event)"  id="searchData">
+        <input type="text" placeholder="Enter the city Name"  id="inputBox">
+        <button>Search</button>
+    </form> -->
+ 
+    <form onsubmit="getData(event)" class="searchData">
+      <input id="inputBox" type="text" placeholder="Enter the city name" />
+      <button>Search</button>
+    </form>
+
+    <!-- RESULT -->
+    <section id="countryDetails">
+
+        <!-- 1111 -->
+        <div class="card">
+          <p>Country Name</p>
+          <p id="countryName">__</p>
+        </div>
+
+        <!-- 2222 -->
+        <div class="card">
+            <p>State Name</p>
+            <p id="stateName">__</p>
+          </div>
+
+          <!-- 3333 -->
+        <div class="card">
+            <p>City Name</p>
+            <p id="cityName">__</p>
+          </div>
+
+           
+       
+    </section>
+
+    <section  class="humidityDetails">
+      <!-- 4444 -->
+      <div class="card">
+        <p>Humidity</p>
+        <p id="humidity">__</p>
+      </div>
+
+       <!-- 5555 -->
+    <div class="card">
+        <p>Wind Speed</p>
+        <p id="windSpeed">__KMPH</p>
+      </div>
+
+       <!-- 6666 -->
+    <div class="card">
+        <p>Temperature</p>
+        <p id=""><span id="temperature"></span>__&#8451;</p>
+      </div>
+
+       <!-- 7777 -->
+    <div class="card">
+        <img src="" alt="logo"  id="logoImage">
+        <p id="weatherStatus">__</p>
+      </div>
+    </section>
+
+
+   </div>
+   <script src="./script.js"></script>
+    
+</body>
+
+</html>
