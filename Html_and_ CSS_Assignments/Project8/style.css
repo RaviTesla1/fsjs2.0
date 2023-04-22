@@ -293,7 +293,7 @@ header{
         display: flex;
         flex-direction: column-reverse;
         gap: 3rem;
-        padding-bottom: 8rem;
+        padding: 8rem 0;
     }
     .right img{
         margin: 0 auto;
@@ -310,6 +310,15 @@ header{
         gap: 4rem;
         align-items: center;
     }
+    /* FIVE LOGOS START */
+    .logos{
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+            flex-wrap: wrap;
+            justify-content: center;
+    }
+    /* FIVE LOGOS ENDD */
     
     /* ARICLE 22 */
     .features section{
@@ -337,27 +346,31 @@ header{
     }
 
     
-  .services{
-     
-      background-color: var(--bgBlack);
-      color: #faf9f9;
-      border-radius:10%;
-      display: flex;
-      flex-direction: column;
-      row-gap: 14px;
-     margin: 0 120px;
-  }
+  
+  .services {
+    background-color: var(--bgBlack);
+    color: #faf9f9;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    margin: 40px auto;
+    max-width: 390px;
+    padding: 20px 0;
+}
  
   .services section{
-      max-width: 360px;
+      max-width: 350px;
       background-color: var(--bgLightGrey);
-      padding : 24px 0px 24px 20px;
+      padding : 18px 0px 18px 20px;
       border-radius: 90px;
       display: flex;
       flex-direction: row;
       box-sizing: border-box;
       column-gap: 20px;
       transition: all 1s ease-in-out;
+      margin: 0 20px;
+     
   }
   .services section:hover{
       transform: scale(1.1);
@@ -640,6 +653,7 @@ footer div img{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding-left: 2.2rem;
     }
     nav img{
         max-width: 100px;
@@ -652,7 +666,7 @@ footer div img{
         display: flex;
         flex-direction: column-reverse;
         gap: 3rem;
-        padding-bottom: 8rem;
+        padding: 8rem 0;
     }
     .right img{
         margin: 0 auto;
@@ -1033,7 +1047,7 @@ footer div img{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        column-gap: 28rem;
+        column-gap: 19rem;
     }
     nav ul,
     nav button{
@@ -1162,7 +1176,7 @@ footer div img{
     margin-top: 14rem;
 }
 .headers h1{
-    font-size:7rem ;
+    font-size:5rem ;
     color: var(--textWhite);
 }
 .headers div img{
